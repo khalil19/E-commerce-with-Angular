@@ -20,4 +20,18 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have logo', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="logo"]')).toBeTruthy()
+  });
+  
+  it('should have search', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="search"]')).toBeTruthy()
+  });
+  
+  it('should have menu', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="menu"]')).toBeTruthy()
+  });
+
+
 });
