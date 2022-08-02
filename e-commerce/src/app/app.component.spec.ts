@@ -26,10 +26,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('e-commerce');
   });
 
-  it('should render title', () => {
+  it('should have navbar component', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('e-commerce app is running!');
+    expect(compiled.querySelector('app-navbar')).not.toBe(null);
   });
 });
