@@ -23,6 +23,8 @@ describe('NavbarComponent', () => {
 
   it('should have logo', () => {
     expect(fixture.nativeElement.querySelector('[data-test ="logo"]')).toBeTruthy()
+    //expect(fixture.nativeElement.querySelector('img').src).toContain('/images/logo.png')
+    
   });
   
   it('should have search', () => {
