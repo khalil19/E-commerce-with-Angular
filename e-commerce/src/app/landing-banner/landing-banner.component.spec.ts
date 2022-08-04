@@ -25,9 +25,17 @@ describe('LandingBannerComponent', () => {
   it('should have banner section',()=>{
     expect(fixture.nativeElement.querySelector("[data-test= banner-section]")).toBeTruthy()
   })
+
   it('should have a bg image',()=>{
     let compStyle = getComputedStyle(fixture.debugElement.query(By.css('.landing-banner')).nativeElement)
     console.log(compStyle.getPropertyValue('background-image'))
     expect(compStyle.getPropertyValue('background-image')).toContain("bg-banner.jpg")
+  })
+
+  it('should have banner section welcome text',()=>{
+    expect(fixture.nativeElement.querySelector("[data-test= welcome-texte-h1]")).toBeTruthy()
+  })
+  it('should have banner section welcome text',()=>{
+    expect(fixture.nativeElement.querySelector("[data-test= welcome-texte-h2]")).toBeTruthy()
   })
 });
