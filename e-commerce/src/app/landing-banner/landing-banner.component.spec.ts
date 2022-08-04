@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LandingBannerComponent } from './landing-banner.component';
+import { By } from '@angular/platform-browser';
 
 describe('LandingBannerComponent', () => {
   let component: LandingBannerComponent;
@@ -20,4 +21,13 @@ describe('LandingBannerComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have banner section',()=>{
+    expect(fixture.nativeElement.querySelector("[data-test= banner-section]")).toBeTruthy()
+  })
+  it('should have a bg image',()=>{
+    let compStyle = getComputedStyle(fixture.debugElement.query(By.css('.landing-banner')).nativeElement)
+    console.log(compStyle.getPropertyValue('background-image'))
+    expect(compStyle.getPropertyValue('background-image')).toContain("bg-banner.jpg")
+  })
 });
