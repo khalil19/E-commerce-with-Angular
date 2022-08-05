@@ -1,21 +1,24 @@
 .container-div {
-    position: relative;
+
+    text-align:center;
     
   }
 .landing-banner{
     background-image: url("../../assets/images/bg-banner.jpg");
     background-position: top;
-    height: 550px;
+    height: 500px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    filter: brightness(50%) ;
+    /*filter: brightness(50%) ;*/
 }
 
 .wlecome-texte-h1{
     text-align: center;
-    position: absolute;
-    top:40%;
-    right: 45%;
+    color: white;
+    padding-top: 15%;
+}
+
+.wlecome-texte-h2{
     color: white;
 }
