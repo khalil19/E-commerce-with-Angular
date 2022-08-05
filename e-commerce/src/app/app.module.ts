@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingBannerComponent } from './landing-banner/landing-banner.component';
+import { ProductsSectionComponent } from './products-section/products-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LandingBannerComponent
+    LandingBannerComponent,
+    ProductsSectionComponent
   ],
   imports: [
     BrowserModule,

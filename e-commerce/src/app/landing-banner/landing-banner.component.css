@@ -16,10 +16,12 @@
 .banner-text{
     padding-top: 15%;
     transition: .3s;
+    align-self: center;
+    margin: 0;
 }
 
 .banner-text:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 .wlecome-texte-h1{
     text-align: center;

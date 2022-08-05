@@ -40,4 +40,26 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('app-landing-banner')).not.toBe(null);
   });
 
+  it('should have product section promotion', () => {
+    
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('[data-test ="products-promo-section"]')).toBeTruthy();
+  });
+
+  it('should have product section best rated', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('[data-test ="products-bestrated-section"]')).toBeTruthy();
+  });
+
+  it('should have product section new', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('[data-test ="products-new-section"]')).toBeTruthy();
+  });
+
 });

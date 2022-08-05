@@ -35,7 +35,7 @@ describe('LandingBannerComponent', () => {
   it('should have banner section welcome text',()=>{
     expect(fixture.nativeElement.querySelector("[data-test= welcome-texte-h1]")).toBeTruthy()
   })
-  it('should have banner section welcome text',()=>{
+  it('should have banner section welcome sub text',()=>{
     expect(fixture.nativeElement.querySelector("[data-test= welcome-texte-h2]")).toBeTruthy()
   })
 });
