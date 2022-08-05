@@ -13,12 +13,28 @@
     /*filter: brightness(50%) ;*/
 }
 
+.banner-text{
+    padding-top: 15%;
+    transition: .3s;
+}
+
+.banner-text:hover{
+    transform: scale(1.5);
+}
 .wlecome-texte-h1{
     text-align: center;
     color: white;
-    padding-top: 15%;
 }
+
 
 .wlecome-texte-h2{
     color: white;
+
 }
+/*.wlecome-texte-h1:hover{
+    transform: scale(1.5);
+}
+
+.wlecome-texte-h2:hover{
+    font-size: larger;
+}*/
