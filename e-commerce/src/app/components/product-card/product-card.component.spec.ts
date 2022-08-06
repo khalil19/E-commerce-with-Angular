@@ -40,4 +40,12 @@ describe('ProductCardComponent', () => {
   it('should has stars', () => {
     expect(fixture.nativeElement.querySelector('[data-test ="stars"]')).toBeTruthy()
   });
+
+  it('should has images gallery', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="imgs-gallery"]')).toBeTruthy()
+  });
+
+  it('should has img in images gallery', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="img-gallery"]')).toBeTruthy()
+  });
 });
