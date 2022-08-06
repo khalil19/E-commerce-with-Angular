@@ -1,5 +1,13 @@
-<div>
-    <h1 class="title-animated" data-test="title">
-        <b>{{title}}</b> 
-    </h1>
+<div class="product-section">
+    <div>
+        <h1 class="title-animated" data-test="title">
+            <b>{{title}}</b> 
+        </h1>
+    </div>
+
+    <div class="products" data-test ="product-cards-gallery">
+        <app-product-card  data-test="product-card" [productData] = product></app-product-card>
+        <app-product-card></app-product-card>
+        <app-product-card></app-product-card>
+    </div>
 </div>

@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LandingBannerComponent } from './landing-banner.component';
 import { By } from '@angular/platform-browser';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('LandingBannerComponent', () => {
   let component: LandingBannerComponent;
@@ -9,7 +10,8 @@ describe('LandingBannerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LandingBannerComponent ]
+      declarations: [ LandingBannerComponent ],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents();
 

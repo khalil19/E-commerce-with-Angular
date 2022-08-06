@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductsSectionComponent implements OnInit {
   
   @Input() title = '';
+  product = {title:"Phone"}
   constructor() { }
 
   ngOnInit(): void {

@@ -20,4 +20,24 @@ describe('ProductCardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should check if it has @input product data', () => {
+    expect(component.productData).toBeTruthy();
+  });
+
+  it('should has title', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="title"]')).toBeTruthy()
+  });
+  it('should has image', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="img"]')).toBeTruthy()
+  });
+  it('should has description', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="description"]')).toBeTruthy()
+  });
+  it('should has price', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="price"]')).toBeTruthy()
+  });
+  it('should has stars', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="stars"]')).toBeTruthy()
+  });
 });
