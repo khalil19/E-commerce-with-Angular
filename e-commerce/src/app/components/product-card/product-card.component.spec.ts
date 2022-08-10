@@ -1,3 +1,4 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductCardComponent } from './product-card.component';
@@ -8,7 +9,8 @@ describe('ProductCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProductCardComponent ]
+      declarations: [ ProductCardComponent ],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents();
 
@@ -47,5 +49,17 @@ describe('ProductCardComponent', () => {
 
   it('should has img in images gallery', () => {
     expect(fixture.nativeElement.querySelector('[data-test ="img-gallery"]')).toBeTruthy()
+  });
+
+  it('should has an actions section', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="actions"]')).toBeTruthy()
+  });
+
+  it('should has details button', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="see-details"]')).toBeTruthy()
+  });
+
+  it('should has buy button', () => {
+    expect(fixture.nativeElement.querySelector('[data-test ="buy"]')).toBeTruthy()
   });
 });
