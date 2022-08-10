@@ -171,3 +171,8 @@ li{
     margin: 5px 10px 5px 10px;
     color: white;
 }
+
+.actions li:hover{
+    transition: .5s;
+    transform: scale(1.3);
+}
